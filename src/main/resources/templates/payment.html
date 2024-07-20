@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>eSewa Payment</title>
+</head>
+<body>
+    <h1>Subscribe Now</h1>
+    <form action="/esewa/pay" method="post">
+        <input type="hidden" name="amt" value="20">
+        <input type="hidden" name="psc" value="0">
+        <input type="hidden" name="pdc" value="0">
+        <input type="hidden" name="txAmt" value="0">
+        <input type="hidden" name="tAmt" value="20">
+        <input type="hidden" name="pid" value="1234567890_20">
+        <input type="hidden" name="su" value="http://localhost:8080/esewa/success">
+        <input type="hidden" name="fu" value="http://localhost:8080/esewa/failure">
+        <button type="submit">Pay 20rs with eSewa</button>
+    </form>
+    <form action="/esewa/pay" method="post">
+        <input type="hidden" name="amt" value="50">
+        <input type="hidden" name="psc" value="0">
+        <input type="hidden" name="pdc" value="0">
+        <input type="hidden" name="txAmt" value="0">
+        <input type="hidden" name="tAmt" value="50">
+        <input type="hidden" name="pid" value="1234567890_50">
+        <input type="hidden" name="su" value="http://localhost:8080/esewa/success">
+        <input type="hidden" name="fu" value="http://localhost:8080/esewa/failure">
+        <button type="submit">Pay 50rs with eSewa</button>
+    </form>
+</body>
+</html>
